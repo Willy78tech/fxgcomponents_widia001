@@ -21,9 +21,7 @@
 
 Exemple d'utilisation :
 
-    ` 
-<Avatar alt="vador" src="assets/img/01.jpg" sx={{ width: {50}, height: {50}}}/>
-     `
+`<Avatar alt="vador" src="assets/img/01.jpg" sx={{ width: {50}, height: {50}}}/>`
     
 #
 2) Composant button :
