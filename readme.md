@@ -19,14 +19,11 @@
 - Dans chaque scénario des avatars on peut modifier la largeur, la hauteur et l'espacement
 - propriétés : spacing, width, height
 
-   
-    ` <AvatarGroup max={4} direction="row" spacing={spacing}>
-      <Avatar alt="vador" src="assets/img/01.jpg" sx={{ width: {width}, height: {height}}}/>
-      <Avatar alt="luke" src="assets/img/02.jpg" sx={{ width: {width}, height: {height}}}/>
-      <Avatar alt="han" src="assets/img/03.jpg" sx={{ width: {width}, height: {height}}}/>
-      <Avatar alt="chewbacca" src="assets/img/04.jpg" sx={{ width: {width}, height: {height}}}/>
-      <Avatar alt="leia" src="assets/img/05.jpg" sx={{ width: {width}, height: {height}}}/>
-    </AvatarGroup> `
+Exemple d'utilisation :
+
+    ` 
+<Avatar alt="vador" src="assets/img/01.jpg" sx={{ width: {50}, height: {50}}}/>
+     `
     
 #
 2) Composant button :
@@ -34,28 +31,21 @@
 - Dans chaque scénario de ce bouton on peut modifier le type de bouton, le texte, la couleur, la largeur ainsi que la hauteur
 - propriétés : text, color, variant, width, height
 
-`<Box
-      sx={{
-        '& > :not(style)': { m: 1 },
-      }}
-    >
-      <Button variant={variant} color={color} sx={{width: width}} height={height}>
-        {text}
-      </Button>
-    </Box>`
+Exemple d'utilisation :
+
+`
+      <Button variant={contained} color={secondary} sx={{width: 200px}} height={5px}> {Plutot Réact ou Vue ?} </Button>`
 #
 3) Composant checkbox :
 
 - Dans chaque scénario du checkbox on peut modifier la couleur, la taille, activer ou non le checkbox et cocher ou non par défaut
 - propriétés : checked, color, size, disabled
 
-`<div >
-      <Checkbox {...label} defaultChecked checked={checked} color={color} size={size} disabled={disabled}/>
-      <Checkbox {...label} defaultChecked color="secondary" checked={checked} size={size} disabled={disabled}/>
-      <Checkbox {...label} defaultChecked color="success" />
-      <Checkbox {...label} defaultChecked color="default" />
-      <Checkbox {...label} defaultChecked sx={{color: pink[800],'&.Mui-checked': {color: pink[600],}, }} checked={checked} size={size} disabled={disabled}/>
-</div>`
+Exemple d'utilisation :
+
+    ` 
+<Checkbox checked={true} color={primary} size={small} disabled={false}/>`
+
 
 #
 4) Composant paper :
@@ -93,6 +83,8 @@
 - Dans chaque scénario de cercle de progression on peut modifier l'intervalle de temps du compte à rebours
 - propriété: step
 
+Exemple d'utilisation :
+
 `<Typography variant="caption" component="div" color="text.secondary">
           {`${Math.round(props.value)}%`}
 </Typography>`
@@ -103,36 +95,14 @@
 - Dans chaque scénario des boutons radio on peut modifier l'emplacement du label par rapport au bouton
 - propriété: labelPlacement
 
-`<FormControl>
-      <FormLabel id="demo-form-control-label-placement">Label placement</FormLabel>
-      <RadioGroup
-        row
-        aria-labelledby="demo-form-control-label-placement"
-        name="position"
-        defaultValue="top"
-      >
-        <FormControlLabel
-          value="top"
-          control={<Radio />}
-          label={label}
-          labelPlacement={labelPlacement} disabled={Disabled}
-           
-        />
-        <FormControlLabel
-          value="Start"
-          control={<Radio />}
-          label={label}
-          labelPlacement={labelPlacement} disabled={Disabled}
-        />
-        <FormControlLabel
-          value="Bottom"
-          control={<Radio />}
-          label={label}
-          labelPlacement={labelPlacement} disabled={Disabled}
-        />
-       <FormControlLabel value="End" control={<Radio />} label={label} labelPlacement={labelPlacement}  disabled={Disabled}/>
-      </RadioGroup>
-    </FormControl>`
+`
+    <FormControlLabel
+        value="top"
+        control={<Radio />}label={label}
+        labelPlacement={labelPlacement} 
+        disabled={Disabled}
+    />
+        `
 
 #
 7) Composant rating :
