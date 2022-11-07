@@ -5,7 +5,7 @@
 
 # Description du Projet
 
-Ce projet est une réalisation d'une bibliothèque de composants Réact réutilisable.
+Ce projet est une réalisation d'une bibliothèque de composants Réact réutilisables.
 
 Elle est composée de 10 composants :
 
