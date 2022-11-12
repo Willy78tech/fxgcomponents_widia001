@@ -39,3 +39,11 @@ Large.args = {
     height: '15px'
 };
 
+export const Patate = Template.bind({});
+Patate.args = {
+    text: 'Patate',
+    color: 'error',
+    variant: 'contained',
+    width: '600px',
+    height: '15px'
+};
