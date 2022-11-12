@@ -20,7 +20,6 @@ Elle est composée de 10 composants :
 - Snackbar
 - Transition
 
-
 # Lancement du Projet
 
 - yarn install
@@ -98,5 +97,3 @@ Elle est composée de 10 composants :
 
 - React 18.2.0
 - Librairie : Matérial UI
-
-
